@@ -171,9 +171,9 @@ func setupRoutes(router: Router, todos: TodoCollection) {
             return
         }
 
-        let title = json["title"].stringValue
-        let order = json["order"].intValue
-        let completed = json["completed"].boolValue
+        let title = json["title"].string
+        let order = json["order"].int
+        let completed = json["completed"].bool
 
         todos.update(id: id, title: title, order: order, completed: completed) {
 
@@ -211,9 +211,9 @@ func setupRoutes(router: Router, todos: TodoCollection) {
             return
         }
 
-        let title = json["title"].stringValue
-        let order = json["order"].intValue
-        let completed = json["completed"].boolValue
+        let title = json["title"].string
+        let order = json["order"].int
+        let completed = json["completed"].bool
 
         todos.update(id: id, title: title, order: order, completed: completed) {
 
